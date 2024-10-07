@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
 from task2.views import func_view, class_view
-from task3 import views
+from task4 import views
 
 
 urlpatterns = [
