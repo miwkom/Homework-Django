@@ -19,6 +19,7 @@ from django.urls import path
 from django.views.generic import TemplateView
 from task2.views import func_view, class_view
 from task4 import views
+from task5.views import sign_up_by_django, sign_up_by_html
 
 
 urlpatterns = [
@@ -28,5 +29,7 @@ urlpatterns = [
     path('class2/', TemplateView.as_view(template_name='class_template.html')),
     path('platform/', views.platform),
     path('platform/games/', views.games),
-    path('platform/cart/', views.cart)
+    path('platform/cart/', views.cart),
+    path('registration/', sign_up_by_html),
+    path('registration2/', sign_up_by_django),
 ]
